@@ -23,7 +23,7 @@ const SelectYourLens = () => {
         const fetchData = async (slug, token) => {
             try {
                 const response = await axios.get(
-                    `http://localhost:5055/api/selectlens/by-product-slug/${slug}`,
+                    `https://apitrivsion.prismcloudhosting.com/api/selectlens/by-product-slug/${slug}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`, // Send token in headers
@@ -96,7 +96,7 @@ const SelectYourLens = () => {
 
             // Send update request to backend
             const response = await axios.put(
-                `http://localhost:5055/api/selectlens/${id}`,
+                `https://apitrivsion.prismcloudhosting.com/api/selectlens/${id}`,
                 data,
                 {
                     headers: {

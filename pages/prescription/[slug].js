@@ -13,7 +13,7 @@ const Prescription = () => {
         const fetchData = async (slug, token) => {
             try {
                 const response = await axios.get(
-                    `http://localhost:5055/api/selectlens/by-product-slug/${slug}`,
+                    `https://apitrivsion.prismcloudhosting.com/api/selectlens/by-product-slug/${slug}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`, // Send token in headers
